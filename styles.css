@@ -1,0 +1,92 @@
+@font-face {
+  font-family: montserrat-medium;
+  src: url(./assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: space-mono-regular;
+  src: url(./assets/fonts/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.json-data-wrapper{
+  margin-left: 50px;
+}
+.clock-wrapper{
+  color: white;
+  font-family: space-mono-regular, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+.plain-js-text{
+color:rgb(226, 226, 226)
+}
+.js-keyword{
+color: rgb(152, 42, 255)
+}
+.js-value{
+color:rgb(0, 197, 148)
+}
+.js-symbol{
+  color: rgb(255, 123, 0);
+}
+.settings-wrapper{
+  background-color: rgba(255, 255, 255, 0.418);
+  padding: 2rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  font-family: montserrat-medium, sans-serif;
+  font-size: 15px;
+}
+.settings-tab{
+  margin: 10px 0 10px 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#separator{
+  margin: 0 50px 0 50px;
+  width: 0px;
+  height: 60vh;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  box-shadow: 0px 0px 13px 0px #ffffff70;
+}
+.check-button{
+  margin: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #595959;
+  border-radius: 4px;
+  transition-duration: 400ms;
+  cursor: pointer;
+}
+.check-button:hover{
+  background-color: #9e9e9e;
+}
+.check-button .checked ::after{
+  background-color: rgb(27, 161, 27);
+}
+.check-button .checked ::after:hover{
+  background-color: rgb(34, 207, 34);
+}

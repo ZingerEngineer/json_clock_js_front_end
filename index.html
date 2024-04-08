@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      href="./assets/json_white.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Json Clock</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="clock-wrapper">
+        <div
+          id="open-brace"
+          class="plain-js-text"
+        >
+          <span
+            id="let-keyword"
+            class="js-keyword"
+            >let
+          </span>
+          clock <span class="js-symbol">=</span> {
+        </div>
+        <div class="json-data-wrapper">
+          <div class="hours-statement">
+            hours<span class="js-symbol">:</span>
+            <span
+              id="hours"
+              class="js-value"
+            ></span
+            >,
+          </div>
+          <div class="minutes-statement">
+            minutes<span class="js-symbol">:</span>
+            <span
+              id="minutes"
+              class="js-value"
+            ></span
+            >,
+          </div>
+          <div class="seconds-statement">
+            seconds<span class="js-symbol">:</span>
+            <span
+              id="seconds"
+              class="js-value"
+            ></span
+            >,
+          </div>
+          <div class="period-statement">
+            period<span class="js-symbol">:</span>
+            <span
+              id="period"
+              class="js-value"
+            ></span
+            >,
+          </div>
+          <div class="day-statement">
+            day<span class="js-symbol">:</span>
+            <span
+              id="day"
+              class="js-value"
+            ></span
+            >,
+          </div>
+          <div class="month-statement">
+            month<span class="js-symbol">:</span>
+            <span
+              id="month"
+              class="js-value"
+            ></span
+            >,
+          </div>
+          <div class="year-statement">
+            year<span class="js-symbol">:</span>
+            <span
+              id="year"
+              class="js-value"
+            ></span>
+          </div>
+        </div>
+        <div
+          id="close-brace"
+          class="close-brace"
+        >
+          }
+        </div>
+      </div>
+      <div id="separator"></div>
+      <div class="settings-wrapper">
+        <div
+          id="12hour-tab"
+          class="settings-tab"
+        >
+          <input
+            id="12hour"
+            class="settings-checkbox"
+            type="checkbox"
+            hidden
+          />
+          <div
+            id="12hour-check-button"
+            class="check-button"
+          ></div>
+          Use 12-hours format.
+        </div>
+
+        <div
+          id="seconds-tab"
+          class="settings-tab"
+        >
+          <input
+            id="show-seconds-input"
+            class="settings-checkbox"
+            type="checkbox"
+            type="checkbox"
+            hidden
+          />
+          <div
+            id="show-seconds-check-button"
+            class="check-button"
+          ></div>
+          Show seconds.
+        </div>
+        <div
+          id="leading-zeros-tab"
+          class="settings-tab"
+        >
+          <input
+            id="leading-zeros"
+            class="settings-checkbox"
+            type="checkbox"
+            hidden
+          />
+          <div
+            id="leading-zeros-check-button"
+            class="check-button"
+          ></div>
+          Leading zeros.
+        </div>
+      </div>
+    </div>
+    <p class="debugger"></p>
+    <script src="./index.js"></script>
+  </body>
+</html>
